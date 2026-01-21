@@ -545,7 +545,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-
 ## About k11 Software Solutions
 
 **k11 Software Solutions** is a leading provider of modern, AI-powered test automation, DevOps, and quality engineering services. We help organizations accelerate digital transformation with robust, scalable, and intelligent automation solutions tailored for SaaS, web, and enterprise platforms.
@@ -555,3 +554,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Partner with us to future-proof your QA and automation strategy!*
 
+## Follow Me
+<p align="center">
+    <a href="https://github.com/K11-Software-Solutions/k11techlab-playwright-python-ai-assisted-framework" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    </a>
+    <a href="https://www.linkedin.com/in/kavita-jadhav-tech/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    </a>
+    <a href="https://k11softwaresolutions.com" target="_blank">
+        <img src="https://img.shields.io/badge/Business%20Website-00B386?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Business Website"/>
+    </a>
+</p>
