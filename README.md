@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/K11-Software-Solutions/assets/main/k11-logo.png" alt="K11 Software Solutions Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
+    <img src="artifacts/assets/k11-logo.png" alt="K11 Software Solutions Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
     <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
     <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" height="60" style="vertical-align:middle;"/>
 </p>
