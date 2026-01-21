@@ -13,19 +13,19 @@ This repository provides a modern, maintainable automation solution crafted spec
 ---
 ## Table of Contents
 
-- [Features](#-features)
-- [Framework Architecture](#-framework-architecture)
-- [Technologies & Tools](#-technologies--tools)
-- [Prerequisites](#-prerequisites)
-- [Installation & Setup](#-installation--setup)
-- [Project Structure](#-project-structure)
-- [Running Tests](#-running-tests)
-- [Configuration](#-configuration)
-- [Reporting](#-reporting)
-- [Best Practices Implemented](#-best-practices-implemented)
-- [Contributing](#-contributing)
-- [Author](#-author)
-- [License](#-license)
+- [Features](#features)
+- [Framework Architecture](#framework-architecture)
+- [Technologies & Tools](#technologies--tools)
+- [Prerequisites](#prerequisites)
+- [Installation & Setup](#installation--setup)
+- [Project Structure](#project-structure)
+- [Running Tests](#running-tests)
+- [Configuration](#configuration)
+- [Reporting](#reporting)
+- [Best Practices Implemented](#best-practices-implemented)
+- [Contributing](#contributing)
+- [Author](#author)
+- [License](#license)
 
 ---
 
@@ -434,45 +434,16 @@ When tests fail, the following artifacts are automatically captured:
 
 ## Best Practices Implemented
 
-### 1. **Page Object Model (POM)**
-- Separation of concerns
-- Reusable page components
-- Easy maintenance
+### Best Practices Implemented (Summary)
 
-### 2. **DRY Principle**
-- Reusable fixtures in conftest.py
-- Utility classes for common operations
-- Centralized configuration
-
-### 3. **Naming Conventions**
-- Descriptive test names
-- Clear variable naming
-- Consistent file structure
-
-### 4. **Error Handling**
-- Try-except blocks in page objects
-- Meaningful error messages
-- Graceful failure handling
-
-### 5. **Documentation**
-- Inline code comments
-- Docstrings for classes and methods
-- Comprehensive README
-
-### 6. **Version Control**
-- .gitignore for Python projects
-- Requirements.txt for dependencies
-- Clean commit history
-
-### 7. **Scalability**
-- Modular architecture
-- Easy to add new tests
-- Support for multiple environments
-
-### 8. **CI/CD Ready**
-- Command-line configuration
-- Parallel execution support
-- Multiple report formats
+- **Page Object Model (POM):** Clear separation, reusable components, easy maintenance.
+- **DRY Principle:** Shared fixtures, utility classes, centralized config.
+- **Naming Conventions:** Descriptive test names, clear variables, consistent structure.
+- **Error Handling:** Robust try-except, meaningful errors, graceful failures.
+- **Documentation:** Inline comments, docstrings, comprehensive README.
+- **Version Control:** .gitignore, requirements files, clean commits.
+- **Scalability:** Modular, extensible, multi-environment support.
+- **CI/CD Ready:** CLI config, parallel execution, multiple report formats.
 
 ---
 
@@ -563,18 +534,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Key Concepts Demonstrated
 
-- Designing robust test automation frameworks
+- Designing robust, AI-powered test automation frameworks
 - Implementing the Page Object Model (POM)
 - Utilizing pytest fixtures and hooks
-- Creating data-driven test strategies
-- Generating and analyzing test reports
-- Applying browser automation best practices
-- Structuring and maintaining clean, scalable code
+- Creating data-driven and AI-driven test strategies
+- Generating and analyzing test reports (HTML, Allure, AI insights)
+- Applying browser automation and self-healing locator best practices
+- Leveraging LLMs for test generation, data, and analysis
+- Structuring and maintaining clean, scalable, and intelligent code
 
 ---
-
-**If you find this project helpful, please give it a star!**
-
 
 
 ## About k11 Software Solutions
