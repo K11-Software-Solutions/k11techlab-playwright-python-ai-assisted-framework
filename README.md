@@ -65,7 +65,7 @@ This repository provides a modern, maintainable automation solution crafted spec
 ```
 ┌────────────────────────────────────────────────────────────────────┐
 │                        TEST LAYER                                 │
-│  (tests/) - Test logic, assertions, and AI-driven scenarios       │
+│  (tests/k11-platform/) - Test logic, assertions, and AI-driven scenarios │
 └───────────────────────┬───────────────────────────────────────────┘
                         │
 ┌───────────────────────▼───────────────────────────────────────────┐
@@ -177,7 +177,7 @@ k11techlab-playwright-python-ai-assisted-framework/
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # Project documentation
 │
-├── pages/                         # Page Object Model classes
+├── pages/                         # Page Object Model classes (about_page.py, login_page.py, etc.)
 │   ├── __init__.py
 │   ├── home_page.py              # Home page actions & locators
 │   ├── login_page.py             # Login page actions & locators
@@ -193,7 +193,11 @@ k11techlab-playwright-python-ai-assisted-framework/
 │   ├── reset_password_page.py    # Reset password page actions & locators
 │   └── service_page.py           # Service/Subscription page actions & locators
 │
-├── tests/                         # Test cases
+├── tests/
+│   ├── k11-platform/              # Main test cases (test_login_data_driven.py, test_login_page.py, etc.)
+│   ├── playwright-advanced/       # Advanced Playwright scenarios
+│   ├── playwright-examples/       # Example Playwright tests
+│   └── ai/                        # AI-related test cases
 │   ├── __init__.py
 │   ├── test_about_page.py            # About page tests
 │   ├── test_contact_page.py          # Contact page tests
@@ -202,7 +206,7 @@ k11techlab-playwright-python-ai-assisted-framework/
 │   ├── test_forgot_password_page.py  # Forgot password tests
 │   ├── test_home_page.py             # Home page tests
 │   ├── test_insights_page.py         # Insights page tests
-│   ├── test_login_data_driven.py     # Data-driven login tests
+│   ├── k11-platform/test_login_data_driven.py     # Data-driven login tests
 │   ├── test_login_page.py            # Login page tests
 │   ├── test_register_page.py         # Registration page tests
 │   ├── test_reset_password_page.py   # Reset password tests
@@ -246,10 +250,10 @@ k11techlab-playwright-python-ai-assisted-framework/
 pytest
 
 # Run specific test file
-pytest tests/test_login.py
+pytest tests/k11-platform/test_login_page.py
 
 # Run specific test function
-pytest tests/test_login.py::test_valid_user_login
+pytest tests/k11-platform/test_login_page.py::test_valid_user_login
 
 # Run tests with verbose output
 pytest -v
@@ -314,7 +318,7 @@ pytest -m "not sanity"
 pytest -m datadriven
 
 # Run specific data-driven test
-pytest tests/test_login_data_driven.py
+pytest tests/k11-platform/test_login_data_driven.py
 ```
 
 ### Rerun Failed Tests
