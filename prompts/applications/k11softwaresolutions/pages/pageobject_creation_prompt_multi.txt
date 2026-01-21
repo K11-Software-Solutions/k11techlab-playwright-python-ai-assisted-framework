@@ -1,0 +1,126 @@
+# Page Object Creation Prompt — site pages and element id mappings
+
+{
+  "pages": {
+    "frontend/app/home/page.js": {
+      "container": { "id": "home-hero-section", "type": "section" },
+      "hero_bg": { "id": "home-hero-bg", "type": "background" },
+      "hero_content": { "id": "home-hero-content", "type": "container" },
+      "hero_grid": { "id": "home-hero-grid", "type": "layout" },
+      "hero_left": { "id": "home-hero-left", "type": "container" },
+      "hero_announcement": { "id": "home-hero-announcement", "type": "text" },
+      "hero_title": { "id": "home-hero-title", "type": "heading" },
+      "hero_description": { "id": "home-hero-description", "type": "text" },
+      "hero_actions": { "id": "home-hero-actions", "type": "container" },
+      "explore_services_btn": { "id": "home-explore-services-btn", "type": "link" },
+      "contact_btn": { "id": "home-contact-btn", "type": "link" },
+      "hero_benefits": { "id": "home-hero-benefits", "type": "list" },
+      "benefit_fast": { "id": "home-benefit-fast", "type": "badge" },
+      "benefit_scalable": { "id": "home-benefit-scalable", "type": "badge" },
+      "benefit_ai": { "id": "home-benefit-ai", "type": "badge" },
+      "hero_image_container": { "id": "home-hero-image-container", "type": "container" },
+      "hero_image": { "id": "home-hero-image", "type": "image" },
+      "quick_actions_section": { "id": "home-quick-actions-section", "type": "section" },
+      "quick_actions_container": { "id": "home-quick-actions-container", "type": "container" },
+      "quick_actions_header": { "id": "home-quick-actions-header", "type": "container" },
+      "quick_actions_header_content": { "id": "home-quick-actions-header-content", "type": "container" },
+      "quick_actions_title": { "id": "home-quick-actions-title", "type": "heading" },
+      "quick_actions_desc": { "id": "home-quick-actions-desc", "type": "text" },
+      "quick_actions_grid": { "id": "home-quick-actions-grid", "type": "grid" },
+      "dashboard_link": { "id": "home-dashboard-link", "type": "link" },
+      "dashboard_card": { "id": "home-dashboard-card", "type": "card" },
+      "dashboard_card_body": { "id": "home-dashboard-card-body", "type": "container" },
+      "dashboard_icon": { "id": "home-dashboard-icon", "type": "icon" },
+      "dashboard_content": { "id": "home-dashboard-content", "type": "container" },
+      "dashboard_title_row": { "id": "home-dashboard-title-row", "type": "container" },
+      "dashboard_title": { "id": "home-dashboard-title", "type": "heading" },
+      "dashboard_arrow": { "id": "home-dashboard-arrow", "type": "icon" },
+      "dashboard_desc": { "id": "home-dashboard-desc", "type": "text" },
+      "services_link": { "id": "home-services-link", "type": "link" },
+      "services_card": { "id": "home-services-card", "type": "card" },
+      "services_card_body": { "id": "home-services-card-body", "type": "container" },
+      "services_icon": { "id": "home-services-icon", "type": "icon" },
+      "services_content": { "id": "home-services-content", "type": "container" },
+      "services_title_row": { "id": "home-services-title-row", "type": "container" },
+      "services_title": { "id": "home-services-title", "type": "heading" },
+      "services_arrow": { "id": "home-services-arrow", "type": "icon" },
+      "services_desc": { "id": "home-services-desc", "type": "text" }
+    },
+    "frontend/app/login/page.js": {
+      "container": { "id": "login-container", "type": "form-container" },
+      "title": { "id": "login-title", "type": "heading" },
+      "error": { "id": "login-error", "type": "text" },
+      "form": { "id": "login-form", "type": "form" },
+      "username": { "id": "login-username", "type": "input" },
+      "password": { "id": "login-password", "type": "input" },
+      "forgot_password_link": { "id": "login-forgot-password-link", "type": "container" },
+      "forgot_link": { "id": "login-forgot-link", "type": "link" },
+      "submit": { "id": "login-submit", "type": "button" },
+      "register_link": { "id": "login-register-link", "type": "text" },
+      "register_here": { "id": "login-register-here", "type": "link" }
+    },
+    "frontend/app/forgot-password/page.js": {
+      "container": { "id": "forgot-password-container", "type": "form-container" },
+      "form": { "id": "forgot-password-form", "type": "form" },
+      "email": { "id": "forgot-password-email", "type": "input" },
+      "submit": { "id": "forgot-password-submit", "type": "button" },
+      "message": { "id": "forgot-password-message", "type": "text" },
+      "error": { "id": "forgot-password-error", "type": "text" }
+    },
+    "frontend/app/reset-password/page.js": {
+      "container": { "id": "reset-password-container", "type": "form-container" },
+      "title": { "id": "reset-password-title", "type": "heading" },
+      "message": { "id": "reset-password-message", "type": "text" },
+      "error": { "id": "reset-password-error", "type": "text" },
+      "form": { "id": "reset-password-form", "type": "form" },
+      "password": { "id": "reset-password-password", "type": "input" },
+      "confirm": { "id": "reset-password-confirm", "type": "input" },
+      "submit": { "id": "reset-password-submit", "type": "button" }
+    },
+    "frontend/app/register/page.js": {
+      "container": { "id": "register-container", "type": "form-container" },
+      "title": { "id": "register-title", "type": "heading" },
+      "error": { "id": "register-error", "type": "text" },
+      "success": { "id": "register-success", "type": "text" },
+      "form": { "id": "register-form", "type": "form" },
+      "username": { "id": "register-username", "type": "input" },
+      "email": { "id": "register-email", "type": "input" },
+      "password": { "id": "register-password", "type": "input" },
+      "subscription": { "id": "register-subscription", "type": "select" },
+      "submit": { "id": "register-submit", "type": "button" }
+    },
+    "frontend/app/contact/page.js": {
+      "container": { "id": "contact-container", "type": "form-container" },
+      "title": { "id": "contact-title", "type": "heading" },
+      "form": { "id": "contact-form", "type": "form" },
+      "name": { "id": "contact-name", "type": "input" },
+      "email": { "id": "contact-email", "type": "input" },
+      "message": { "id": "contact-message", "type": "textarea" },
+      "submit": { "id": "contact-submit", "type": "button" },
+      "sent": { "id": "contact-sent", "type": "text" }
+    },
+    "frontend/app/services/page.js": {
+      "container": { "id": "services-container", "type": "container" },
+      "title": { "id": "services-title", "type": "heading" }
+    },
+    "frontend/app/about/page.js": {
+      "container": { "id": "about-container", "type": "container" },
+      "title": { "id": "about-title", "type": "heading" }
+    },
+    "frontend/app/insights/page.js": {
+      "container": { "id": "insights-container", "type": "container" }
+    },
+    "frontend/app/dashboard/page.js": {
+      "container": { "id": "dashboard-container", "type": "container" },
+      "title": { "id": "dashboard-title", "type": "heading" },
+      "welcome": { "id": "dashboard-welcome", "type": "text" },
+      "email": { "id": "dashboard-email", "type": "text" },
+      "logout": { "id": "dashboard-logout", "type": "button" }
+    }
+  }
+}
+
+- Use id as the first preference, then name, then text for selectors.
+- Each field should generate a method in the Java class.
+- Use Playwright's Page API for actions (fill, click, isVisible, etc).
+- Output only valid Java code for the page object classes.

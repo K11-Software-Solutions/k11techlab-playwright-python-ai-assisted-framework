@@ -1,0 +1,15 @@
+{
+  "test_name": "login_happy_path",
+  "base_url": "https://k11softwaresolutions.com/login",
+  "steps": [
+    { "tool": "browser_navigate", "args": { "url": "https://k11softwaresolutions.com/login" } },
+    { "tool": "browser_snapshot" },
+
+    { "tool": "browser_type", "args": { "element": "Username field", "ref": "PASTE_REF_FROM_SNAPSHOT", "text": "demo" } },
+    { "tool": "browser_type", "args": { "element": "Password field", "ref": "PASTE_REF_FROM_SNAPSHOT", "text": "secret" } },
+
+    { "tool": "browser_click", "args": { "element": "Sign in button", "ref": "PASTE_REF_FROM_SNAPSHOT" } },
+
+    { "tool": "browser_verify_text_visible", "args": { "text": "Welcome" } }
+  ]
+}

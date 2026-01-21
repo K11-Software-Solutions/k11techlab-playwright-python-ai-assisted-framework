@@ -1,0 +1,14 @@
+[
+  {
+    "testName": "Valid login",
+    "email": "testuser",
+    "password": "testpass",
+    "expected": "success"
+  },
+  {
+    "testName": "Invalid login",
+    "email": "wronguser",
+    "password": "wrongpass",
+    "expected": "failure"
+  }
+]

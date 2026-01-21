@@ -1,0 +1,16 @@
+
+Generate a complete, runnable Python pytest test function using Playwright for Python.
+Test file: {filename}
+MUST include:
+- All required imports (pytest, playwright.sync_api, etc).
+- Use the pytest-playwright page fixture for browser context and page management.
+- A test function that:
+  - Reads weburl, username, and password from a config or fixture (use placeholders if not specified).
+  - Navigates to the weburl.
+  - Fills the username and password fields and clicks the login button (use generic selectors if not specified).
+  - Asserts that the dashboard is visible after login (e.g., page.is_visible('text=Dashboard')).
+- Output ONLY Python code, no markdown.
+- The code must be complete and not truncated.
+
+Scenario:
+{scenario}

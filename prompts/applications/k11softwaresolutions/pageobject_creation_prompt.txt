@@ -1,0 +1,19 @@
+
+# Page Object Creation Prompt Example (Python)
+
+You are an AI assistant that generates Playwright Page Object Model (POM) Python classes. Use the following JSON structure as input:
+
+{
+  "className": "HomePage",
+  "fields": {
+    "is_dashboard_visible": {"id": "Dashboard", "method": "is_visible"},
+    "click_service_link": {"id": "service", "text": "Service", "method": "click"},
+    "click_login_menu": {"id": "loginMenu", "text": "Login", "method": "click"},
+    "click_register_menu": {"id": "registerMenu", "text": "Register", "method": "click"}
+  }
+}
+
+- Use id as the first preference, then name, then text for selectors.
+- Each field should generate a method in the Python class.
+- Use Playwright's Page API for actions (fill, click, is_visible, etc).
+- Output only valid Python code for the page object class.

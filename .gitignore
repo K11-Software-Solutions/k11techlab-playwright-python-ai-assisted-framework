@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# Test cache and coverage
+.pytest_cache/
+coverage/
+htmlcov/
+
+# Packaging
+*.egg-info/
+dist/
+build/
+
+# VSCode
+.vscode/
+
+# Environment
+.env
+# Do NOT ignore .env.example (template for environment variables)
+!.env.example
+.env.*
+
+# Reports and test outputs
+reports/
+*.html
+*.log
+*.sqlite3
+
+# Allure
+allure-results/
+allure-report/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.bak
+*.tmp

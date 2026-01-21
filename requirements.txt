@@ -1,0 +1,8 @@
+pytest
+playwright
+pytest-playwright
+pytest-xdist
+pytest-html
+allure-pytest
+pytest-rerunfailures
+python-slugify

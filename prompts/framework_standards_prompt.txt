@@ -1,0 +1,17 @@
+
+# Playwright Framework Standards Prompt (Python)
+
+- All Playwright test files should use pytest for test discovery and execution.
+- Use fixtures for browser, context, and page setup/teardown (e.g., `@pytest.fixture`).
+- Do not instantiate Playwright, browser, or page directly in test functions; use fixtures provided by pytest-playwright or your own conftest.py.
+- Example test method:
+
+  def test_example(page):
+      # test steps using the provided Playwright page fixture
+      page.goto("https://example.com")
+      assert page.title() == "Example Domain"
+
+- Use the Page Object Model for all page interactions. Each page should be a class in the `pages/` directory.
+- Page object methods should encapsulate actions and assertions for that page.
+- Follow Python best practices for naming, structure, and code style (PEP8).
+- All test code should be readable, maintainable, and DRY.
