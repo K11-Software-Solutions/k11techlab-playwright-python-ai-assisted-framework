@@ -1,20 +1,16 @@
-# k11softwaresolutions.com Playwright Python Test Automation Framework
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/K11-Software-Solutions/assets/main/k11-logo.png" alt="K11 Software Solutions Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
+    <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
+    <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" height="60" style="vertical-align:middle;"/>
+</p>
+
+# Playwright Python AI-Assisted Test Automation Framework
 
 This repository provides a modern, maintainable automation solution crafted specifically for [k11softwaresolutions.com](https://k11softwaresolutions.com/). Built with **Playwright** and **Python**, the framework is designed for clarity, scalability, and real-world QA needs. It features a modular Page Object Model (POM), advanced AI-assisted testing, and robust support for data-driven and parallel test execution. The architecture is optimized for subscription and service-based SaaS flows, with a focus on maintainability and extensibility for teams and individuals alike.
 
 
 ---
-
-## About k11 Software Solutions
-
-**k11 Software Solutions** is a leading provider of modern, AI-powered test automation, DevOps, and quality engineering services. We help organizations accelerate digital transformation with robust, scalable, and intelligent automation solutions tailored for SaaS, web, and enterprise platforms.
-
-- Website: [https://k11softwaresolutions.com](https://k11softwaresolutions.com)
-- LinkedIn: [k11 Software Solutions](https://www.linkedin.com/company/k11softwaresolutions)
-- Contact: info@k11softwaresolutions.com
-
-*Partner with us to future-proof your QA and automation strategy!*
-
 ## Table of Contents
 
 - [Features](#-features)
@@ -586,3 +582,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **If you find this project helpful, please give it a star!**
+
+
+
+## About k11 Software Solutions
+
+**k11 Software Solutions** is a leading provider of modern, AI-powered test automation, DevOps, and quality engineering services. We help organizations accelerate digital transformation with robust, scalable, and intelligent automation solutions tailored for SaaS, web, and enterprise platforms.
+
+- Website: [https://k11softwaresolutions.com](https://k11softwaresolutions.com)
+- Contact: k11softwaresolutions@gmail.com
+
+*Partner with us to future-proof your QA and automation strategy!*
+
