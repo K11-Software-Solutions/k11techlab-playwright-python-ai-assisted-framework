@@ -557,12 +557,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Follow Me
 <p align="center">
     <a href="https://github.com/Kavitaj11/" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+        <img src="https://img.shields.io/badge/K11%20Tech%20Lab-FFFFFF?style=for-the-badge&logo=github&logoColor=black" alt="K11 Tech Lab"/>
     </a>
     <a href="https://www.linkedin.com/in/kavita-jadhav-tech/" target="_blank">
         <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
     </a>
     <a href="https://k11softwaresolutions.com" target="_blank">
-        <img src="https://img.shields.io/badge/Business%20Website-00B386?style=for-the-badge&logo=google-chrome&logoColor=white" alt="K11 Software Solutions"/>
+        <img src="https://img.shields.io/badge/k11softwaresolutions-00B386?style=for-the-badge&logo=google-chrome&logoColor=white" alt="k11softwaresolutions"/>
     </a>
 </p>
