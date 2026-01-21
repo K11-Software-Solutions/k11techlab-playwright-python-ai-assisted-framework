@@ -65,7 +65,7 @@ This repository provides a modern, maintainable automation solution crafted spec
 ```
 ┌────────────────────────────────────────────────────────────────────┐
 │                        TEST LAYER                                 │
-│  (tests/k11-platform/) - Test logic, assertions, and AI-driven scenarios │
+│  (tests/) - Test logic, assertions, and AI-driven scenarios │
 └───────────────────────┬───────────────────────────────────────────┘
                         │
 ┌───────────────────────▼───────────────────────────────────────────┐
@@ -120,8 +120,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/playwright-python-framework.git
-cd playwright-python-framework
+git clone https://github.com/K11-Software-Solutions/k11techlab-playwright-python-ai-assisted-framework.git
+cd k11techlab-playwright-python-ai-assisted-framework
 ```
 
 ### 2. Create Virtual Environment (Recommended)
@@ -142,6 +142,7 @@ source venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
+pip install -r requirements-ai.txt
 ```
 
 ### 4. Install Playwright Browsers
@@ -198,20 +199,7 @@ k11techlab-playwright-python-ai-assisted-framework/
 │   ├── playwright-advanced/       # Advanced Playwright scenarios
 │   ├── playwright-examples/       # Example Playwright tests
 │   └── ai/                        # AI-related test cases
-│   ├── __init__.py
-│   ├── test_about_page.py            # About page tests
-│   ├── test_contact_page.py          # Contact page tests
-│   ├── test_dashboard_page.py        # Dashboard page tests
-│   ├── test_end_to_end.py            # End-to-end subscription/service flow
-│   ├── test_forgot_password_page.py  # Forgot password tests
-│   ├── test_home_page.py             # Home page tests
-│   ├── test_insights_page.py         # Insights page tests
-│   ├── k11-platform/test_login_data_driven.py     # Data-driven login tests
-│   ├── test_login_page.py            # Login page tests
-│   ├── test_register_page.py         # Registration page tests
-│   ├── test_reset_password_page.py   # Reset password tests
-│   ├── test_services_page.py         # Service/Subscription page tests
-│   └── test_user_logout.py           # Logout functionality tests
+
 │
 ├── utilities/                     # Helper utilities
 │   ├── __init__.py
