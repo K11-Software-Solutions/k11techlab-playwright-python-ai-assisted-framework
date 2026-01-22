@@ -23,9 +23,10 @@ build/
 
 # Environment
 .env
+.env.*
 # Do NOT ignore .env.example (template for environment variables)
 !.env.example
-.env.*
+
 
 # Reports and test outputs
 reports/
