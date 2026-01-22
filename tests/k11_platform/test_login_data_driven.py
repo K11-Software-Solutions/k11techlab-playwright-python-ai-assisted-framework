@@ -2,9 +2,9 @@ import time
 
 import pytest
 
-from pages.home_page import HomePage
-from pages.login_page import LoginPage
-from pages.dashboard_page import DashboardPage
+from pages.k11_platform.home_page import HomePage
+from pages.k11_platform.login_page import LoginPage
+from pages.k11_platform.dashboard_page import DashboardPage
 from playwright.sync_api import expect
 from utilities.data_reader import read_json_data, read_csv_data, read_excel_data
 

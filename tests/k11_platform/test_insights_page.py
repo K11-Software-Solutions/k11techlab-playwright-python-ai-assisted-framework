@@ -1,5 +1,5 @@
 import pytest
-from pages.insights_page import InsightsPage
+from pages.k11_platform.insights_page import InsightsPage
 
 @pytest.fixture(scope="session")
 def base_url(request):

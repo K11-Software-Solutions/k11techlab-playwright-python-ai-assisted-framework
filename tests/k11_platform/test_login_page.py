@@ -1,5 +1,5 @@
 import pytest
-from pages.login_page import LoginPage
+from pages.k11_platform.login_page import LoginPage
 
 @pytest.fixture
 def login_credentials():

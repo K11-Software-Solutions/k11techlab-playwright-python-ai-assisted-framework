@@ -1,5 +1,5 @@
 import pytest
-from pages.contact_page import ContactPage
+from pages.k11_platform.contact_page import ContactPage
 
 @pytest.fixture(scope="session")
 def base_url(request):

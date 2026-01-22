@@ -1,5 +1,5 @@
 import pytest
-from pages.home_page import HomePage
+from pages.k11_platform.home_page import HomePage
 
 @pytest.fixture(scope="session")
 def base_url(request):

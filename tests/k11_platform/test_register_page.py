@@ -1,5 +1,5 @@
 import pytest
-from pages.register_page import RegisterPage
+from pages.k11_platform.register_page import RegisterPage
 
 
 @pytest.fixture

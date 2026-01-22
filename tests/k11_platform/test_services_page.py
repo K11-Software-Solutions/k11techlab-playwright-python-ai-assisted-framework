@@ -1,5 +1,5 @@
 import pytest
-from pages.service_page import ServicePage
+from pages.k11_platform.service_page import ServicePage
 
 
 
