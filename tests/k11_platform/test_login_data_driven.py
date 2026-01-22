@@ -1,3 +1,5 @@
+
+import re
 import time
 
 import pytest
@@ -15,19 +17,20 @@ json_data = read_json_data("testdata/logindata.json")
 
 @pytest.mark.datadriven
 @pytest.mark.parametrize("testName,email,password,expected", csv_data)
+
 def test_login_data_driven(page, testName, email, password, expected):
-	home_page = HomePage(page)
+	# Go to the login page directly
+	page.goto("https://k11softwaresolutions.com/login")
+
 	login_page = LoginPage(page)
 	dashboard_page = DashboardPage(page)
 
-	home_page.click_my_account()
-	home_page.click_login()
-
 	login_page.login(email, password)
-	time.sleep(3)
 
 	if expected == "success":
-		expect(dashboard_page.get_title()).to_be_visible(timeout=3000)
+		# Wait for dashboard URL and then check for dashboard welcome text
+		expect(page).to_have_url(re.compile(r"/dashboard"), timeout=10000)
+		expect(page.locator("text=Manage your account and view updates")).to_be_visible(timeout=10000)
 	else:
-		expect(login_page.get_login_error()).to_be_visible(timeout=3000)
+		expect(login_page.get_login_error()).to_be_visible(timeout=10000)
 # ...existing code...

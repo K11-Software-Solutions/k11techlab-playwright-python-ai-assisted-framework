@@ -17,8 +17,10 @@ def login_url(base_url):
 	return f"{base_url}/login"
 
 def test_login_error_visible(page, login_credentials, login_url):
+	from playwright.sync_api import expect
 	login = LoginPage(page)
 	page.goto(login_url)
 	login.login(login_credentials["username"], login_credentials["password"])
+	expect(login.error).to_be_visible(timeout=5000)
 	assert login.is_error_visible()
 # ...existing code...

@@ -70,10 +70,7 @@ class HomePage:
         self.services_arrow = page.locator('#home-services-arrow')
         self.services_desc = page.locator('#home-services-desc')
 
-    def click_my_account(self):
-        # Example: click dashboard link as 'my account' for SaaS
-        self.dashboard_link.click()
-
+  
     def click_register(self):
         # Try known attributes first
         if hasattr(self, 'register_link'):
@@ -105,30 +102,10 @@ class HomePage:
 
 
     def click_login(self):
-        """Click on the login link/button from the home page, trying multiple selectors."""
-        selectors = [
-            '#home-login-link',
-            '#login',
-            '.login-btn',
-            'a[href*="login"]',
-            'button:has-text("Login")',
-            'a:has-text("Login")',
-        ]
-        for selector in selectors:
-            locator = self.page.locator(selector)
-            try:
-                if locator.is_visible():
-                    print(f"Clicking login using selector: {selector}")
-                    locator.click()
-                    return
-            except Exception as e:
-                print(f"Selector {selector} not clickable: {e}")
-        raise Exception("No login button/link found using common selectors on HomePage.")
-
+       # Click the Login link in the navbar
+        self.nav_login.click()
 
     # Example action methods for key elements
-
-
     def get_hero_title(self):
         """Return the text content of the hero title element."""
         return self.hero_title.text_content()
