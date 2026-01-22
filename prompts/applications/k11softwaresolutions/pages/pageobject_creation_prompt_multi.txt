@@ -121,6 +121,6 @@
 }
 
 - Use id as the first preference, then name, then text for selectors.
-- Each field should generate a method in the Java class.
-- Use Playwright's Page API for actions (fill, click, isVisible, etc).
-- Output only valid Java code for the page object classes.
+- Each field should generate a method in the python class.
+- Use Playwright's Page API for actions
+- Output only valid python code for the page object classes.
