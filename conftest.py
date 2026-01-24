@@ -124,32 +124,25 @@ def k11_artifacts(request, page, context):
             attachment_type=allure.attachment_type.PNG,
         )
 
-    # ---------- VIDEO ----------
-    # Video is finalized when the page is closed. Close it here so we can attach reliably.
-    try:
-        page.close()
-    except Exception:
-        pass
-
+ # ---------- VIDEO ----------
     if video_mode in ("on", "retain-on-failure"):
+    # ensure video is finalized (saved on context close)
+      try:
+        context.close()
+      except Exception:
+       pass
+
+    if video_mode == "on" or (video_mode == "retain-on-failure" and failed):
         try:
             if page.video:
                 vpath = Path(page.video.path())
                 if vpath.exists():
-                    if video_mode == "on" or (video_mode == "retain-on-failure" and failed):
-                        allure.attach.file(
-                            str(vpath),
-                            name=f"{request.node.name}_video",
-                            attachment_type=allure.attachment_type.WEBM,
-                        )
-                    else:
-                        # cleanup videos from passing tests (best effort)
-                        try:
-                            vpath.unlink()
-                        except Exception:
-                            pass
+                    allure.attach.file(
+                        str(vpath),
+                        name=f"{request.node.name}_video",
+                        attachment_type=allure.attachment_type.WEBM,
+                    )
         except Exception:
-            # If the underlying driver did not produce a video, ignore
             pass
 
 
@@ -186,3 +179,25 @@ def pytest_addoption(parser):
         default="off",
         help="Tracing: on, retain-on-failure, off"
     )
+    parser.addoption(
+        "--k11device",
+        action="store",
+        default=None,
+        help='Playwright device to emulate (e.g., "iPhone 12", "Pixel 5")'
+    )
+
+@pytest.fixture(scope="session")
+def browser_context_args(browser_context_args, playwright, pytestconfig):
+    args = dict(browser_context_args)
+
+    # device emulation (optional)
+    dev = pytestconfig.getoption("--k11device")
+    if dev:
+        args.update(playwright.devices[dev])
+
+    # video output dir (optional)
+    video_mode = pytestconfig.getoption("--k11video")
+    if video_mode in ("on", "retain-on-failure"):
+        args["record_video_dir"] = "reports/videos"
+
+    return args

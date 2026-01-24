@@ -56,7 +56,7 @@ def test_touch_tap_and_drag(browser, playwright, demo_artifacts_dir):
 
     # Serve the directory containing the HTML file
     html_dir = pathlib.Path(__file__).parent
-    PORT = 8765
+    PORT = 3000
     Handler = http.server.SimpleHTTPRequestHandler
     httpd = socketserver.TCPServer(("", PORT), Handler)
     server_thread = threading.Thread(target=httpd.serve_forever)
