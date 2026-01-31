@@ -62,14 +62,14 @@ def pytest_runtest_makereport(item, call):
             report.extras = extras
 
 
-@pytest.fixture(autouse=True)
+@pytest.fixture()
 def k11_artifacts(request, page, context):
     """
     Autouse fixture for k11-platform tests only.
     """
     test_path = str(request.node.fspath)
+    # Only apply for k11-platform tests
     if "tests/k11-platform" not in test_path:
-        # Do nothing for non-k11-platform tests
         yield
         return
 
