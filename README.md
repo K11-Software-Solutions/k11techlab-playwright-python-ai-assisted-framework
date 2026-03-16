@@ -1,10 +1,4 @@
 
-## Author
-
-**Kavita Jadhav**
-
-Accomplished Full Stack Developer and Test Automation Engineer specializing in modern web application development, robust full stack solutions, and scalable automation frameworks. Expert in Playwright, advanced quality engineering, and driving best practices for high-impact, reliable software delivery.
-
 LinkedIn: [https://www.linkedin.com/in/kavita-jadhav-tech/](https://www.linkedin.com/in/kavita-jadhav-tech/)
 
 <p align="center">
@@ -552,6 +546,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Structuring and maintaining clean, scalable, and intelligent code
 
 ---
+
+## Author
+
+**Kavita Jadhav**
+
+Accomplished Full Stack Developer and Test Automation Engineer specializing in modern web application development, robust full stack solutions, and scalable automation frameworks. Expert in Playwright, advanced quality engineering, and driving best practices for high-impact, reliable software delivery.
 
 ## About k11 Software Solutions
 
